@@ -1,4 +1,5 @@
 import requests
+import sys
 from bs4 import BeautifulSoup
 
 def url_scraping(url):
@@ -46,7 +47,9 @@ def write_article_to_file(article, url, i):
 
 def main():
     # User file input
-    with open('newsarticles_url.txt', 'r') as file:
+    # Take in commandline arguments
+    filename = sys.argv[1]
+    with open(filename, 'r') as file:
         article_urls = file.readlines()
 
     # Handle reading and writing URLs from given text file input, then check for exceptions.

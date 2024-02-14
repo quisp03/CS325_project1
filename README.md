@@ -2,7 +2,7 @@
 
 This is a program made using python which visits every URL of specified news articles given in a textfile. This script utilizes the requests library to send out requests and BeautifulSoup library for parsing HTML content. It is designed to scrape text and then write out that content to a textfile. The script handles some filtering and discarding of material that is non-related information, containing only the content relevent to the article. 
 ## * Notes before you start
-- This program takes in commandline arguments, when running in terminal be sure to follow this format: 'run scriptname.py something.txt. Also please note that this program is specifically designed to handle news agency articles. Providing URLs of non-news articles or other types of web pages may lead to unexpected output or errors.
+- This program takes in commandline arguments, when running in terminal be sure to follow this format: ```run scriptname.py something.txt```. Also please note that this program is specifically designed to handle news agency articles. Providing URLs of non-news articles or other types of web pages may lead to unexpected output or errors.
 
 ## * Requirements
 
